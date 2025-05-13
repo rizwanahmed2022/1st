@@ -17,12 +17,12 @@ char printarray(char array[], int size);
 int main() {
 
     string text;
-    int choise;
+    int choice;
 
     cout << "Choose One Option For:\n";
     cout << "1. Encryption\n";
     cout << "2. Decryption\n";
-    cin >> choise;
+    cin >> choice;
 
     cout << "Enter Your Text: ";
     cin.ignore(); // Clear the input buffer
@@ -32,7 +32,7 @@ int main() {
     char encryptedText[text.length()] = {};
 
 
-    if(choise == 1) {
+    if(choice == 1) {
         cout << "Enter Your Key: ";
         int key;
         cin >> key;
