@@ -33,9 +33,15 @@ int main() {
 
 
     if(choise == 1) {
-        encryption(text, newtext, encryptedText, 22);
+        cout << "Enter Your Key: ";
+        int key;
+        cin >> key;
+        encryption(text, newtext, encryptedText, key);
     } else {
-        dencryption(text, newtext, encryptedText, 22);
+        cout << "Enter Your Key: ";
+        int key;
+        cin >> key;
+        dencryption(text, newtext, encryptedText, key);
     }
 
 
